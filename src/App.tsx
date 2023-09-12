@@ -1,16 +1,15 @@
 import React from 'react';
-import './styles/App.css';
 import { MyContextProvider } from './contexts/PasswordContext';
 
+import MainLayout from './containers/MainLayout';
 import Header from './components/Header';
-
 
 export default function App() {
   return (
     <MyContextProvider>
-      <div className="app">
+      <MainLayout> 
         <Header />      
-      </div>
+      </MainLayout>
     </MyContextProvider>
   );
 }

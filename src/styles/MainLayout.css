@@ -1,0 +1,16 @@
+.main-app-container {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px;
+}
+
+.main-app {
+    outline: auto;
+    width: 100%;
+    max-width: 400px;
+    min-width: 250px;
+    min-height: auto;
+}

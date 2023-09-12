@@ -13,3 +13,7 @@ img {
   width: 100%;
   min-height: auto;
 }
+
+body { 
+  background-color: var(--main-bg-color);
+}

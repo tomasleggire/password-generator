@@ -4,12 +4,12 @@ import '../styles/Header.css';
 
 export default function Header(): JSX.Element {
 
-    const {saludo} = useContext(MyContext);
+    const { saludo } = useContext(MyContext);
 
     return (
-        <>
-            <p>Password Generator</p>
-            <p>{saludo}</p>
-        </>
+        <div className="main-header">
+          <p>Password Generator</p>
+          <p>{saludo}</p>
+        </div>
     )
 }
