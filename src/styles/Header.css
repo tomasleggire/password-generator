@@ -1,3 +1,45 @@
 .main-header {
-    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header h2 {
+    text-align: center;
+    color: var(--gray-title);
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+.header-main-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    width: 100%;
+    background-color: var(--secondary-bg-color);
+}
+
+.header-main-section p {
+    color: var(--gray-placeholder);
+    font-weight: 600;
+    font-size: var(--lg);
+}
+
+.header-main-section button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--principal-green);
+    transition: .3s;
+}
+
+.header-main-section button:hover {
+    color: var(--white);
+}
+
+.header-main-button-icon {
+    width: 20px;
+    height: 20px;
 }

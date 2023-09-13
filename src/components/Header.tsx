@@ -1,5 +1,7 @@
 import { useContext } from 'react';
 import { MyContext } from '../contexts/PasswordContext';
+import { FaRegCopy } from 'react-icons/fa';
+
 import '../styles/Header.css';
 
 export default function Header(): JSX.Element {
@@ -8,8 +10,11 @@ export default function Header(): JSX.Element {
 
     return (
         <div className="main-header">
-          <p>Password Generator</p>
-          <p>{saludo}</p>
+          <h2>Password Generator</h2>
+          <div className="header-main-section">
+            <p>{saludo}</p>
+            <button><FaRegCopy className="header-main-button-icon"/></button>
+          </div>
         </div>
     )
 }
