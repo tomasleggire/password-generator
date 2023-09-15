@@ -7,8 +7,8 @@ import Header from './components/Header';
 export default function App() {
   return (
     <MyContextProvider>
-      <MainLayout> 
-        <Header />      
+      <MainLayout>
+        <Header />
       </MainLayout>
     </MyContextProvider>
   );

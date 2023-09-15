@@ -8,10 +8,16 @@ interface MyProps {
 }
 
 export const MyContextProvider = (props: MyProps) => {
-  const { saludo } = usePassword();
+  const {
+    initialStatePassword,
+    newPassword,
+    setNewPassword
+  } = usePassword();
 
   const contextValue = {
-    saludo,
+    initialStatePassword,
+    newPassword,
+    setNewPassword
   };
 
   return (

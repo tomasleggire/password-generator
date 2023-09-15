@@ -8,8 +8,8 @@
 .main-header h2 {
     text-align: center;
     color: var(--gray-title);
-    font-family: monospace;
     margin-bottom: 20px;
+    font-family: monospace;
 }
 
 .header-main-section {
@@ -22,9 +22,17 @@
 }
 
 .header-main-section p {
-    color: var(--gray-placeholder);
     font-weight: 600;
     font-size: var(--lg);
+    font-family: monospace;
+}
+
+.header-password-invalid {
+    color: var(--gray-title);
+}
+
+.header-password-valid {
+    color: var(--white);
 }
 
 .header-main-section button {

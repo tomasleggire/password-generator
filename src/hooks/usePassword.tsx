@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 
 export default function usePassword() {
-    const saludo = "P4$5W0rD!";
+    const initialStatePassword = "P4$5W0rD!";
+    const [newPassword, setNewPassword] = useState('')
 
     return {
-        saludo
+        initialStatePassword,
+        newPassword,
+        setNewPassword
     }
 }
