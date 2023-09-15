@@ -1,11 +1,8 @@
 import React from "react";
+import { ChildrenProps } from "../types";
 import '../styles/MainLayout.css';
 
-interface MyProps {
-    children: React.ReactNode;
-}
-
-export default function MainLayout(props: MyProps) {
+export default function MainLayout(props: ChildrenProps) {
    return (
     <div className="main-app-container">
         <div className="main-app">
