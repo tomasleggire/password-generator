@@ -1,6 +1,6 @@
 import React from "react";
 import { ChildrenProps } from "../types";
-import '../styles/OptinsLayout.css';
+import '../styles/OptionsLayout.css';
 
 export default function OptinsLayout(props: ChildrenProps): JSX.Element {
     return (
