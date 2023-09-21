@@ -5,16 +5,16 @@ export default function RangeSelector() {
   const [rangeValue, setRangeValue] = useState(0);
 
   const handleRangeSelector = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setRangeValue(Number (e.target.value));
+    setRangeValue(Number(e.target.value));
   };
 
   return (
-    <div>
-      <div>
+    <div className="main-range-selector">
+      <div className="label-range-selector">
         <h3>Character Length</h3>
         <span>{rangeValue}</span>
       </div>
-      <div>
+      <div className="range-selector">
         <input
           type="range"
           min="0"
