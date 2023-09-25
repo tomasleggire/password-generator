@@ -8,7 +8,7 @@ interface MyProps {
 
 export default function BoxInput(props: MyProps) {
   return (
-    <div>
+    <div className="main-checkbox-component">
       <input type="checkbox" />
       <p>{props.name}</p>
     </div>

@@ -1,0 +1,12 @@
+.main-checkbox-component {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.main-checkbox-component p {
+  font-family: monospace;
+  font-size: var(--md);
+  color: var(--white);
+}
