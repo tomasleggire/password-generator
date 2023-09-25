@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "../styles/RangeSelector.css";
+import { MyContext } from "../contexts/PasswordContext";
 
 export default function RangeSelector() {
-  const [rangeValue, setRangeValue] = useState(0);
+  const { rangeValue, setRangeValue } = useContext(MyContext);
 
   const handleRangeSelector = (e: React.ChangeEvent<HTMLInputElement>) => {
     setRangeValue(Number(e.target.value));

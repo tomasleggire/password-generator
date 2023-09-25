@@ -1,6 +1,6 @@
-import React, { createContext } from 'react';
-import { ChildrenProps } from '../types';
-import usePassword from '../hooks/usePassword';
+import React, { createContext } from "react";
+import { ChildrenProps } from "../types";
+import usePassword from "../hooks/usePassword";
 
 export const MyContext = createContext<any>(null);
 
@@ -8,13 +8,17 @@ export const MyContextProvider = (props: ChildrenProps) => {
   const {
     initialStatePassword,
     newPassword,
-    setNewPassword
+    setNewPassword,
+    rangeValue,
+    setRangeValue,
   } = usePassword();
 
   const contextValue = {
     initialStatePassword,
     newPassword,
-    setNewPassword
+    setNewPassword,
+    rangeValue,
+    setRangeValue,
   };
 
   return (
@@ -23,5 +27,3 @@ export const MyContextProvider = (props: ChildrenProps) => {
     </MyContext.Provider>
   );
 };
-
-
