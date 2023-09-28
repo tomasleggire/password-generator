@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/CheckBoxesContainer.css";
 import BoxInput from "../components/BoxInput";
+import { MyContext } from "../contexts/PasswordContext";
 
 export default function CheckBoxesContainer() {
+  const { generatePassword } = useContext(MyContext);
+
   const boxes = [
     {
       id: 1,
@@ -27,6 +30,9 @@ export default function CheckBoxesContainer() {
       {boxes.map((box) => (
         <BoxInput key={box.id} name={box.name} />
       ))}
+      <button type="button" onClick={generatePassword}>
+        Create Password
+      </button>
     </div>
   );
 }
