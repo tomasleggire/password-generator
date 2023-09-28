@@ -11,6 +11,8 @@ export const MyContextProvider = (props: ChildrenProps) => {
     setNewPassword,
     rangeValue,
     setRangeValue,
+    boxes,
+    changefilteredBoxes,
     generatePassword,
   } = usePassword();
 
@@ -20,6 +22,8 @@ export const MyContextProvider = (props: ChildrenProps) => {
     setNewPassword,
     rangeValue,
     setRangeValue,
+    boxes,
+    changefilteredBoxes,
     generatePassword,
   };
 
