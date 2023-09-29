@@ -41,14 +41,26 @@ export default function usePassword() {
     console.log(boxes);
   };
 
+  const getFilteredCharacters = () => {
+    let characters = "";
+    boxes.forEach((box) => {
+      if (box.checked) characters += box.characters;
+    });
+    return characters;
+  };
+
   const generatePassword = () => {
-    const characters = "abcdefghijklmnopqrstuvwxyz";
-    let newPassword = "";
-    for (let i = 0; i < rangeValue; i++) {
-      const randomIndex = Math.floor(Math.random() * characters.length);
-      newPassword += characters[randomIndex];
+    const characters = getFilteredCharacters();
+    if (characters == "") {
+      return;
+    } else {
+      let newPassword = "";
+      for (let i = 0; i < rangeValue; i++) {
+        const randomIndex = Math.floor(Math.random() * characters.length);
+        newPassword += characters[randomIndex];
+      }
+      setNewPassword(newPassword);
     }
-    setNewPassword(newPassword);
   };
 
   return {
