@@ -51,7 +51,7 @@ export default function usePassword() {
 
   const generatePassword = () => {
     const characters = getFilteredCharacters();
-    if (characters == "") {
+    if (characters == "" || rangeValue == 0) {
       return;
     } else {
       let newPassword = "";
