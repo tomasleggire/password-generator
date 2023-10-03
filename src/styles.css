@@ -3,11 +3,12 @@
   --secondary-bg-color: rgb(52, 52, 55);
   --gray-title: gray;
   --gray-placeholder: rgb(103, 103, 103);
-  --principal-green: rgb(93, 183, 93);
+  --principal-green: rgb(135, 203, 135);
   --white: rgb(237, 230, 230);
 
   --lg: 20px;
   --md: 16px;
+  --sm: 12px;
 }
 
 * {

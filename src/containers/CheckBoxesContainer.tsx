@@ -5,7 +5,7 @@ import BoxInput from "../components/BoxInput";
 import { MyContext } from "../contexts/PasswordContext";
 
 export default function CheckBoxesContainer() {
-  const { boxes, generatePassword } = useContext(MyContext);
+  const { boxes } = useContext(MyContext);
 
   return (
     <div className="main-boxes-container">
@@ -17,9 +17,6 @@ export default function CheckBoxesContainer() {
           checked={box.checked}
         />
       ))}
-      <button type="button" onClick={generatePassword}>
-        Create Password
-      </button>
     </div>
   );
 }
