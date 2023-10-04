@@ -1,0 +1,35 @@
+.strength-rating-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--third-bg-color);
+  padding: 15px 20px;
+}
+
+.strength-rating-container h5 {
+  color: var(--gray-title);
+  font-size: var(--sm);
+}
+
+.strength-rating-unity-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.strength-rating-unity-container div {
+  width: 8px;
+  height: 22px;
+}
+
+.strength-rating-unity {
+  border: 1px solid var(--white);
+  background: transparent;
+}
+
+.strength-rating-unity-filled {
+  border: 1px solid var(--yellow);
+  background: var(--yellow);
+}

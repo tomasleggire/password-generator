@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  gap: 15px;
 }
 
 .main-options-layout button {

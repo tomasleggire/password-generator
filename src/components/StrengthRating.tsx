@@ -21,10 +21,17 @@ export default function StrengthRating() {
     }
   
     return (
-      <div>
+      <div className="strength-rating-container">
+        <h5>STRENGTH</h5>
+        <div className="strength-rating-unity-container">
         {Array(4).fill("").map((_, i) => (
-          <span key={i} style={{ color: i < strength ? 'green' : 'red' }}>|</span>
+          <div key={i} className={`${i < strength ? "strength-rating-unity-filled" : "strength-rating-unity"}`}></div>
         ))}
+        </div>
       </div>
     );
+}
+
+const styleNotFill = {
+
 }
