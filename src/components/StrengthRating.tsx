@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import "../styles/StrengthRating.css";
 import { MyContext } from "../contexts/PasswordContext";
 
 export default function StrengthRating() {
   const { newPassword } = useContext(MyContext);
-
   let strength = 0;
 
   if (newPassword.length >= 4) {
@@ -21,12 +20,16 @@ export default function StrengthRating() {
 
     if (count >= 3 && newPassword.length > 12) {
       strength = 4;
+      // setStrengthStatus("HIGH");
     } else if (count >= 2 && newPassword.length > 8) {
       strength = 3;
+      // setStrengthStatus("MEDIUM");
     } else if (count >= 2 && newPassword.length <= 8) {
       strength = 2;
+      // setStrengthStatus("MEDIUM");
     } else {
       strength = 1;
+      // setStrengthStatus("LOW");
     }
   } else if (newPassword != "") {
     strength = 1;
@@ -52,5 +55,3 @@ export default function StrengthRating() {
     </div>
   );
 }
-
-const styleNotFill = {};
