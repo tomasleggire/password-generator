@@ -24,7 +24,7 @@
   height: 22px;
 }
 
-.strength-rating-unity {
+.strength-rating-unity-empty {
   border: 1px solid var(--white);
   background: transparent;
 }
