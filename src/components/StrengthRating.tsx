@@ -35,10 +35,25 @@ export default function StrengthRating() {
     strength = 1;
   }
 
+  function getStrengthStatus(strength: number) {
+    switch (strength) {
+      case 1:
+        return "LOW";
+      case 2:
+      case 3:
+        return "MEDIUM";
+      case 4:
+        return "HIGH";
+      default:
+        return "";
+    }
+  }
+
   return (
     <div className="strength-rating-container">
       <h5>STRENGTH</h5>
       <div className="strength-rating-unity-container">
+        <span>{getStrengthStatus(strength)}</span>
         {Array(4)
           .fill("")
           .map((_, i) => (
